@@ -56,7 +56,7 @@ namespace Interface
 
             if(txtNouveauReleve.Text == "" || lstClients.SelectedItem == null )
             {
-                MessageBox.Show("Il y a r dans nouveau relevé ou","Erreur" , MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Il y a r dans nouveau relevé ou vous n'avez pas selectionné un client","Erreur" , MessageBoxButton.OK,MessageBoxImage.Error);
             }
             else
             {
