@@ -1,0 +1,17 @@
+﻿[
+{"IdControleur":"1","PrenomControleur":"Pierre","LesClients":
+[
+{"NomClient":"Garnier","IdCompteur":"101","AncienReleve":"52","NouveauReleve":"112"},
+{"NomClient":"Alison","IdCompteur":"102","AncienReleve":"0","NouveauReleve":"0"},
+{"NomClient":"Texier","IdCompteur":"103","AncienReleve":"94","NouveauReleve":"189"}
+]
+},
+{"IdControleur":"2","PrenomControleur":"Marie","LesClients":
+[
+{"NomClient":"Gand","IdCompteur":"201","AncienReleve":"47","NouveauReleve":"166"},
+{"NomClient":"Muller","IdCompteur":"202","AncienReleve":"0","NouveauReleve":"0"},
+{"NomClient":"Girard","IdCompteur":"203","AncienReleve":"0","NouveauReleve":"0"},
+{"NomClient":"Royer","IdCompteur":"204","AncienReleve":"21","NouveauReleve":"105"}
+]
+}
+]

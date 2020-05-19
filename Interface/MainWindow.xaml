@@ -1,0 +1,46 @@
+﻿<Window x:Class="Interface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interface"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Gestion EDF" FontSize="50" HorizontalAlignment="Left" Margin="251,10,0,0" VerticalAlignment="Top"/>
+        
+        <ListView Name="lstControleurs" SelectionChanged="lstControleurs_SelectionChanged" HorizontalAlignment="Left" Height="123" Margin="26,122,0,0" VerticalAlignment="Top" Width="233">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Numéro" DisplayMemberBinding="{Binding Path=IdControleur}" Width="80"/>
+                    <GridViewColumn Header="Prénom" Width="120" DisplayMemberBinding="{Binding Path=PrenomControleur}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <ListView x:Name="lstClients" HorizontalAlignment="Left" Height="123" Margin="317,122,0,0" VerticalAlignment="Top" Width="454">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Numéro" Width="70" DisplayMemberBinding="{Binding Path=IdCompteur}"/>
+                    <GridViewColumn Header="Nom" Width="130" DisplayMemberBinding="{Binding Path=NomClient}"/>
+                    <GridViewColumn Header="Ancien" Width="130" DisplayMemberBinding="{Binding Path=AncienRelve}" />
+                    <GridViewColumn Header="Nouveau" Width="130" DisplayMemberBinding="{Binding Path=NouveauReleve}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
+        <Label Content="List des contrôleurs" FontSize="20" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top"/>
+        <Label Content="List des clients" FontSize="20" HorizontalAlignment="Left" Margin="298,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nb nouveaux clients" FontSize="20" HorizontalAlignment="Left" Margin="10,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nb clients/contrôleurs" FontSize="20" HorizontalAlignment="Left" Margin="326,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nb total clients" FontSize="20" HorizontalAlignment="Left" Margin="627,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nouveau relevé" FontSize="20" HorizontalAlignment="Left" Margin="10,340,0,0" VerticalAlignment="Top"/>
+        <Button Content="UpDate" FontSize="30" HorizontalAlignment="Left" Margin="317,340,0,0" VerticalAlignment="Top" Width="456" Height="68" Click="Button_Click"/>
+        <TextBox x:Name="txtNouveauClients" HorizontalAlignment="Left" Height="37" Margin="74,293,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55" FontSize="30"   />
+        <TextBox x:Name="txtNouveauReleve"  HorizontalAlignment="Left" Height="37" Margin="10,372,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="217" FontSize="30" />
+        <TextBox x:Name="txtNbclientsparControleurs" HorizontalAlignment="Left" Height="37" Margin="391,293,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55" FontSize="30"/>
+        <TextBox x:Name="txtNbtotalClients" HorizontalAlignment="Left" Height="37" Margin="673,293,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="55" FontSize="30"/>
+
+
+    </Grid>
+</Window>
